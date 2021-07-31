@@ -1,0 +1,59 @@
+/* POLICE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /*centre sur x*/
+    align-items: center; /* centre sur y*/
+    font-family: 'Quicksand', sans-serif;
+    background: black;
+}
+
+.box {
+    position: relative;
+    width: 480px;
+    height: 800px;
+    margin-top: 70px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.box .boxImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(800px);
+    transition: 0.5s;
+}
+
+.box:hover .boxImg {
+    clip-path: circle(200px at center 200px);
+}
+
+.box .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+h2 {
+    color: gainsboro;
+}
+
+p {
+    color: whitesmoke;
+}
